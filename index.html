@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>隐私政策 · 韩剧迷 / K-Drama Hub</title>
+<style>
+  :root { --bg:#fbfbfd; --fg:#1c1c1e; --sub:#3a3a3c; --muted:#8e8e93; --line:#e5e5ea; --accent:#d9547e; }
+  * { box-sizing:border-box; }
+  body { font-family:-apple-system,"PingFang SC","Helvetica Neue",Arial,sans-serif; max-width:780px; margin:0 auto; padding:24px 20px 60px; color:var(--fg); line-height:1.75; background:var(--bg); }
+  header { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:10px; }
+  h1 { font-size:24px; margin:0; }
+  h2 { font-size:17px; margin-top:30px; color:#0b0b0c; }
+  p, li { font-size:15px; color:var(--sub); }
+  .muted { color:var(--muted); font-size:13px; }
+  .toggle { display:inline-flex; border:1px solid var(--line); border-radius:999px; overflow:hidden; }
+  .toggle button { border:0; background:transparent; padding:7px 16px; font-size:14px; color:var(--sub); cursor:pointer; }
+  .toggle button.active { background:var(--accent); color:#fff; }
+  .lang-en { display:none; }
+  body.en .lang-zh { display:none; }
+  body.en .lang-en { display:block; }
+  a { color:var(--accent); }
+  footer { margin-top:40px; padding-top:16px; border-top:1px solid var(--line); }
+</style>
+</head>
+<body>
+<header>
+  <h1>韩剧迷 · 隐私政策</h1>
+  <div class="toggle">
+    <button id="btn-zh" class="active" onclick="setLang('zh')">中文</button>
+    <button id="btn-en" onclick="setLang('en')">English</button>
+  </div>
+</header>
+
+<section class="lang-zh">
+  <p class="muted">最后更新：2026 年 8 月</p>
+
+  <h2>1. 我们不收集你的个人信息</h2>
+  <p>韩剧迷（K-Drama Hub）在设计上<strong>不收集、不存储任何可识别个人身份的信息</strong>。你在本应用内的追剧清单、观看进度、语言偏好等均仅保存在你的设备本地，不会上传到任何服务器。</p>
+
+  <h2>2. 我们不使用广告追踪</h2>
+  <p>本应用<strong>不展示任何广告</strong>，也不请求广告标识符（IDFA）或使用任何用户行为追踪。应用中集成的第三方广告 SDK 处于未初始化、未启用的休眠状态，绝不会加载广告或追踪你的行为。</p>
+
+  <h2>3. 人工智能（AI）功能</h2>
+  <p>「AI 搜同款」与「AI 剧情解读」功能会将被查询的韩剧名称、类型、简介等<strong>文本内容</strong>发送给第三方大语言模型接口以生成推荐与解读。我们<strong>不会</strong>随请求发送账号、设备标识或任何个人身份信息，也不会将这些内容用于训练或留存。</p>
+
+  <h2>4. 本地通知</h2>
+  <p>当你将某部「在看」的连载韩剧加入追剧清单后，应用会在该剧更新时通过<strong>设备本地通知</strong>提醒你。通知完全在设备本地编排，不经过任何服务器。</p>
+
+  <h2>5. 订阅</h2>
+  <p>会员订阅通过 Apple App Store 完成，相关支付信息与账户由 Apple 管理，我们不会接触到你的付款凭证。</p>
+
+  <h2>6. 联系我们</h2>
+  <p>如有任何隐私相关疑问，可邮件联系：1046850694@qq.com</p>
+</section>
+
+<section class="lang-en">
+  <h1>K-Drama Hub · Privacy Policy</h1>
+  <p class="muted">Last updated: August 2026</p>
+
+  <h2>1. We do not collect your personal information</h2>
+  <p>K-Drama Hub is designed so that it <strong>does not collect or store any personally identifiable information</strong>. Your watchlist, viewing progress, and language preference are stored only on your device and are never uploaded to any server.</p>
+
+  <h2>2. We do not use advertising tracking</h2>
+  <p>The app <strong>does not display any ads</strong> and does not request the advertising identifier (IDFA) or use any behavioral tracking. Any third-party ad SDK included in the app remains uninitialized and dormant, and never loads ads or tracks you.</p>
+
+  <h2>3. Artificial Intelligence (AI) features</h2>
+  <p>The "AI Match" and "AI Plot" features send the <strong>text</strong> of the queried drama's title, genres, and synopsis to a third-party large-language-model API to generate recommendations and analysis. We <strong>do not</strong> send any account, device identifier, or personal information with the request, and we do not use the content for training or retention.</p>
+
+  <h2>4. Local notifications</h2>
+  <p>When you add an airing drama you are "watching", the app reminds you via <strong>on-device local notifications</strong> when a new episode is released. Notifications are scheduled entirely on your device and never go through a server.</p>
+
+  <h2>5. Subscriptions</h2>
+  <p>Membership subscriptions are handled by the Apple App Store; payment and account information is managed by Apple, and we never receive your payment credentials.</p>
+
+  <h2>6. Contact</h2>
+  <p>For any privacy questions, email: 1046850694@qq.com</p>
+</section>
+
+<footer><p class="muted">本政策仅适用于韩剧迷（K-Drama Hub）应用本身。</p></footer>
+
+<script>
+  function setLang(l){
+    document.body.classList.toggle('en', l==='en');
+    document.getElementById('btn-zh').classList.toggle('active', l==='zh');
+    document.getElementById('btn-en').classList.toggle('active', l==='en');
+  }
+  if(!navigator.language.toLowerCase().startsWith('zh')) setLang('en');
+</script>
+</body>
+</html>
