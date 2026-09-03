@@ -1,91 +1,126 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>隐私政策 · 韩剧迷 / K-Drama Hub</title>
-<style>
-  :root { --bg:#fbfbfd; --fg:#1c1c1e; --sub:#3a3a3c; --muted:#8e8e93; --line:#e5e5ea; --accent:#d9547e; }
-  * { box-sizing:border-box; }
-  body { font-family:-apple-system,"PingFang SC","Helvetica Neue",Arial,sans-serif; max-width:780px; margin:0 auto; padding:24px 20px 60px; color:var(--fg); line-height:1.75; background:var(--bg); }
-  header { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:10px; }
-  h1 { font-size:24px; margin:0; }
-  h2 { font-size:17px; margin-top:30px; color:#0b0b0c; }
-  p, li { font-size:15px; color:var(--sub); }
-  .muted { color:var(--muted); font-size:13px; }
-  .toggle { display:inline-flex; border:1px solid var(--line); border-radius:999px; overflow:hidden; }
-  .toggle button { border:0; background:transparent; padding:7px 16px; font-size:14px; color:var(--sub); cursor:pointer; }
-  .toggle button.active { background:var(--accent); color:#fff; }
-  .lang-en { display:none; }
-  body.en .lang-zh { display:none; }
-  body.en .lang-en { display:block; }
-  a { color:var(--accent); }
-  footer { margin-top:40px; padding-top:16px; border-top:1px solid var(--line); }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>韩剧工厂 隐私政策 | K-Drama Factory Privacy Policy</title>
+  <style>
+    :root { --primary: #4C2E88; --accent: #f574b2; --bg: #f9f8fc; --card: #ffffff; }
+    * { box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; margin: 0; background: var(--bg); color: #333; line-height: 1.7; }
+    header { background: linear-gradient(135deg, var(--primary), var(--accent)); color: #fff; padding: 48px 20px; text-align: center; }
+    header h1 { margin: 0 0 8px; font-size: 28px; }
+    header p { margin: 0; opacity: .9; }
+    main { max-width: 720px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: var(--card); border-radius: 16px; padding: 24px; margin-bottom: 20px; box-shadow: 0 2px 12px rgba(0,0,0,.05); }
+    h2 { color: var(--primary); font-size: 20px; margin-top: 0; }
+    h3 { color: #555; font-size: 16px; margin: 18px 0 8px; }
+    .lang { margin-bottom: 8px; font-weight: 600; color: var(--accent); }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    a { color: var(--primary); }
+    footer { text-align: center; color: #888; font-size: 14px; padding-bottom: 40px; }
+  </style>
 </head>
 <body>
-<header>
-  <h1>韩剧迷 · 隐私政策</h1>
-  <div class="toggle">
-    <button id="btn-zh" class="active" onclick="setLang('zh')">中文</button>
-    <button id="btn-en" onclick="setLang('en')">English</button>
-  </div>
-</header>
+  <header>
+    <h1>韩剧工厂 隐私政策</h1>
+    <p>K-Drama Factory Privacy Policy</p>
+  </header>
+  <main>
+    <p style="text-align:center; color:#666;">最后更新日期 / Last Updated: 2026-08-27</p>
 
-<section class="lang-zh">
-  <p class="muted">最后更新：2026 年 8 月</p>
+    <div class="card">
+      <p class="lang">中文</p>
+      <p>感谢您使用「韩剧工厂 / K-Drama Factory」。本应用不收集、不存储任何用户个人信息。本政策说明我们在使用第三方公开数据源、本地功能以及可选人工智能特性时的隐私实践。</p>
+      <p class="lang">English</p>
+      <p>Thank you for using "K-Drama Factory". This app does not collect or store any personal information. This policy explains our privacy practices when using public third-party data sources, on-device features, and optional AI services.</p>
+    </div>
 
-  <h2>1. 我们不收集你的个人信息</h2>
-  <p>韩剧迷（K-Drama Hub）在设计上<strong>不收集、不存储任何可识别个人身份的信息</strong>。你在本应用内的追剧清单、观看进度、语言偏好等均仅保存在你的设备本地，不会上传到任何服务器。</p>
+    <div class="card">
+      <h2>1. 我们收集的信息 / Information We Collect</h2>
+      <p class="lang">中文</p>
+      <ul>
+        <li>应用不要求注册、登录或提供任何个人身份信息。</li>
+        <li>为展示韩剧资讯，应用会向 <strong>TVMaze</strong> 公开 REST API（<a href="https://api.tvmaze.com">https://api.tvmaze.com</a>）发起网络请求，获取公开可用的剧集条目、海报图、简介、演员表、播出季次与评分。当您使用搜索功能时，搜索关键词会发送至 TVMaze 服务器以完成检索。</li>
+        <li>应用使用 <strong>UserDefaults</strong> 仅存储本地设置：界面语言（中文/英文）、追剧清单（watchlist）与观看进度、AI 对话历史缓存、应用打开次数（用于好评弹窗逻辑）以及首次打开时间，均不离开您的设备。</li>
+        <li>用户点击「联系开发者/反馈」时，应用会调用系统邮件客户端（mailto）发送邮件；邮件内容由用户主动填写，不会自动上传任何信息。</li>
+      </ul>
+      <p class="lang">English</p>
+      <ul>
+        <li>No registration, login, or personal identification is required.</li>
+        <li>To display Korean drama information, the app sends network requests to the <strong>TVMaze</strong> public REST API (<a href="https://api.tvmaze.com">https://api.tvmaze.com</a>) to fetch publicly available drama entries, poster images, synopses, cast, season schedules, and ratings. When you use search, the search keywords are sent to TVMaze's server to perform lookups.</li>
+        <li>The app uses <strong>UserDefaults</strong> only for local settings: interface language (Chinese/English), watchlist (tracking list) and viewing progress, AI conversation history cache, app launch count (used for review prompt logic), and first-open date. None of this leaves your device.</li>
+        <li>Tapping "Contact Developer / Feedback" opens the system Mail app (mailto) for you to compose a message; no information is automatically uploaded.</li>
+      </ul>
+    </div>
 
-  <h2>2. 广告追踪与设备信息</h2>
-  <p>本应用已集成第三方广告 SDK，并在应用启动时完成初始化。为进行广告投放、归因分析与效果衡量，我们会收集设备标识符（如 IDFA、IDFV）、设备型号、系统版本等手机用户信息，用于广告归因、投放效果优化与个性化推荐。相关信息可能在您使用应用期间由广告 SDK 收集并处理。</p>
+    <div class="card">
+      <h2>2. 人工智能（AI）功能 / AI Features</h2>
+      <p class="lang">中文</p>
+      <ul>
+        <li>「AI 搜同款」与「AI 剧情解读」功能，会将被查询的韩剧名称、类型、简介等 <strong>文本内容</strong> 发送至第三方大语言模型接口（OpenAI 兼容协议）以生成推荐与解读。我们 <strong>不会</strong> 随请求发送您的账号、设备标识符（IDFA/IDFV）、位置信息或任何个人身份信息，也不会将这些内容用于训练或留存。</li>
+        <li>上述请求由您每次主动触发（如点击「问 AI」按钮）才会发出；应用不会在后台自动调用 AI 接口，也不会收集任何行为日志。</li>
+      </ul>
+      <p class="lang">English</p>
+      <ul>
+        <li>The "AI Match" and "AI Plot" features send the <strong>text</strong> of the queried drama's title, genres, and synopsis to a third-party large-language-model API (OpenAI-compatible protocol) to generate recommendations and analysis. We <strong>do not</strong> send any account, device identifier (IDFA/IDFV), location data, or personal information with the request, and we do not use the content for training or retention.</li>
+        <li>The above AI requests are only triggered on your explicit action (e.g. tapping the "Ask AI" button); the app does not call the AI API in the background and does not collect any behavioral logs.</li>
+      </ul>
+    </div>
 
-  <h2>3. 人工智能（AI）功能</h2>
-  <p>「AI 搜同款」与「AI 剧情解读」功能会将被查询的韩剧名称、类型、简介等<strong>文本内容</strong>发送给第三方大语言模型接口以生成推荐与解读。我们<strong>不会</strong>随请求发送账号、设备标识或任何个人身份信息，也不会将这些内容用于训练或留存。</p>
+    <div class="card">
+      <h2>3. 数据共享 / Data Sharing</h2>
+      <p class="lang">中文</p>
+      <p>我们不收集、不出售、不共享任何个人信息。除上文明确披露的第三方 API 调用外，您的数据不会离开您的设备。</p>
+      <p class="lang">English</p>
+      <p>We do not collect, sell, or share any personal information. Beyond the third-party API calls explicitly disclosed above, your data does not leave your device.</p>
+    </div>
 
-  <h2>4. 本地通知</h2>
-  <p>当你将某部「在看」的连载韩剧加入追剧清单后，应用会在该剧更新时通过<strong>设备本地通知</strong>提醒你。通知完全在设备本地编排，不经过任何服务器。</p>
+    <div class="card">
+      <h2>4. 第三方服务 / Third-Party Services</h2>
+      <p class="lang">中文</p>
+      <ul>
+        <li><strong>TVMaze</strong>：剧集数据、海报图与公开元数据。搜索关键词会上传至 TVMaze 以完成检索。</li>
+        <li><strong>第三方大语言模型 API</strong>（AI 搜同款 / AI 剧情解读 / 智能问答）：仅发送查询文本；不会附带账号、设备标识或定位信息。</li>
+        <li><strong>Apple UserNotifications</strong>：本地通知（追剧更新提醒）。通知完全在您的设备上编排。</li>
+        <li><strong>Apple SKAdNetwork / StoreKit 评分弹窗</strong>：触发系统级应用评分弹窗；该接口不会向我们返回设备信息。</li>
+        <li><strong>系统邮件客户端</strong>：用户主动反馈。</li>
+      </ul>
+      <p class="lang">English</p>
+      <ul>
+        <li><strong>TVMaze</strong>: drama data, poster images and public metadata. Search keywords are sent to TVMaze to perform lookups.</li>
+        <li><strong>Third-party LLM API</strong> (AI Match / AI Plot / Q&amp;A): only query text is sent; no account, device identifier, or location data is attached.</li>
+        <li><strong>Apple UserNotifications</strong>: local notifications (episodes reminder). Notifications are scheduled entirely on your device.</li>
+        <li><strong>Apple SKAdNetwork / StoreKit review prompt</strong>: triggers the system-level in-app review prompt. The interface never returns device information to us.</li>
+        <li><strong>System Mail app</strong>: user-initiated feedback.</li>
+      </ul>
+    </div>
 
-  <h2>5. 订阅状态</h2>
-  <p>本应用当前为完全免费版本，不提供任何会员订阅或应用内购买（IAP）项目。</p>
+    <div class="card">
+      <h2>5. 本地通知 / Local Notifications</h2>
+      <p class="lang">中文</p>
+      <p>当您将某部「在看」的连载韩剧加入追剧清单后，应用会在该剧更新时通过 <strong>设备本地通知</strong> 提醒您。通知完全在设备本地编排，不经过任何服务器。</p>
+      <p class="lang">English</p>
+      <p>When you add an airing drama you are "watching", the app reminds you via <strong>on-device local notifications</strong> when a new episode is released. Notifications are scheduled entirely on your device and never go through a server.</p>
+    </div>
 
-  <h2>6. 联系我们</h2>
-  <p>如有任何隐私相关疑问，可邮件联系：1046850694@qq.com</p>
-</section>
+    <div class="card">
+      <h2>6. 未成年人 / Children</h2>
+      <p class="lang">中文</p>
+      <p>本应用不会收集任何用户的个人信息，亦不会主动识别用户年龄。所有设置、追剧清单与观看进度均仅保存在您的设备本地，13 岁以下儿童也可在家长指导下安全使用。</p>
+      <p class="lang">English</p>
+      <p>This app does not collect any personal information from any user and does not attempt to identify a user's age. All settings, the watchlist, and viewing progress are stored only on your device. Children under 13 may use the app safely under parental guidance.</p>
+    </div>
 
-<section class="lang-en">
-  <h1>K-Drama Hub · Privacy Policy</h1>
-  <p class="muted">Last updated: August 2026</p>
-
-  <h2>1. We do not collect your personal information</h2>
-  <p>K-Drama Hub is designed so that it <strong>does not collect or store any personally identifiable information</strong>. Your watchlist, viewing progress, and language preference are stored only on your device and are never uploaded to any server.</p>
-
-  <h2>2. Advertising tracking and device information</h2>
-  <p>The app integrates a third-party advertising SDK that is initialized at launch. To deliver and measure advertising, we collect device identifiers (such as IDFA and IDFV), device model, OS version, and other mobile user information for ad attribution, performance measurement, and personalized delivery. This information may be collected and processed by the advertising SDK while you use the app.</p>
-
-  <h2>3. Artificial Intelligence (AI) features</h2>
-  <p>The "AI Match" and "AI Plot" features send the <strong>text</strong> of the queried drama's title, genres, and synopsis to a third-party large-language-model API to generate recommendations and analysis. We <strong>do not</strong> send any account, device identifier, or personal information with the request, and we do not use the content for training or retention.</p>
-
-  <h2>4. Local notifications</h2>
-  <p>When you add an airing drama you are "watching", the app reminds you via <strong>on-device local notifications</strong> when a new episode is released. Notifications are scheduled entirely on your device and never go through a server.</p>
-
-  <h2>5. Subscription status</h2>
-  <p>This app is currently a completely free version and does not offer any membership subscriptions or in-app purchases (IAP).</p>
-
-  <h2>6. Contact</h2>
-  <p>For any privacy questions, email: 1046850694@qq.com</p>
-</section>
-
-<footer><p class="muted">本政策仅适用于韩剧迷（K-Drama Hub）应用本身。</p></footer>
-
-<script>
-  function setLang(l){
-    document.body.classList.toggle('en', l==='en');
-    document.getElementById('btn-zh').classList.toggle('active', l==='zh');
-    document.getElementById('btn-en').classList.toggle('active', l==='en');
-  }
-  if(!navigator.language.toLowerCase().startsWith('zh')) setLang('en');
-</script>
+    <div class="card">
+      <h2>7. 联系我们 / Contact Us</h2>
+      <p class="lang">中文</p>
+      <p>如您对隐私政策有疑问，欢迎发送邮件至：<a href="mailto:1597681700@qq.com">1597681700@qq.com</a>。邮件由您主动通过系统邮件客户端发送，我们不会在此过程中收集任何信息。</p>
+      <p class="lang">English</p>
+      <p>If you have questions about this privacy policy, please email <a href="mailto:1597681700@qq.com">1597681700@qq.com</a>. Emails are sent voluntarily by you through the system Mail app; we do not collect any information during this process.</p>
+    </div>
+  </main>
+  <footer>© 2026 韩剧工厂 / K-Drama Factory</footer>
 </body>
 </html>
